@@ -1,0 +1,38 @@
+# robot_new_controller:
+  # Publish all joint states -----------------------------------
+  # joint_state_controller:
+  #   type: joint_state_controller/JointStateController
+  #   publish_rate: 50
+
+  # Position Controllers --------------------------------------
+joint_base_controller:
+  type: position_controllers/JointPositionController
+  joint: joint_base
+  # pid: {p: 100.0, i: 0.01, d: 10.0}
+joint_link_1_controller:
+  type: position_controllers/JointPositionController
+  joint: joint_link_1
+  # pid: {p: 100.0, i: 0.01, d: 10.0}
+joint_link_2_controller:
+  type: position_controllers/JointPositionController
+  joint: joint_link_2
+  # pid: {p: 100.0, i: 0.01, d: 10.0}
+joint_link_3_controller:
+  type: position_controllers/JointPositionController
+  joint: joint_link_3
+  # pid: {p: 100.0, i: 0.01, d: 10.0}
+joint_link_4_controller:
+  type: position_controllers/JointPositionController
+  joint: joint_gripper
+  # pid: {p: 100.0, i: 0.01, d: 10.0}
+joint_gripper_controller:
+  type: position_controllers/JointPositionController
+  joint: joint_gripper
+joint_gripper_left_controller:
+  type: position_controllers/JointPositionController
+  joint: joint_gripper_left
+  # pid: {p: 100.0, i: 0.01, d: 10.0}
+joint_gripper_right_controller:
+  type: position_controllers/JointPositionController
+  joint: joint_gripper_right
+  # pid: {p: 100.0, i: 0.01, d: 10.0}
